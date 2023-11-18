@@ -1,4 +1,4 @@
-let percentage = 20;
+let percentage = 50;
 let direction = 44;
 const labelCycle = [
     "Сайт Rivixal обновляется.",
