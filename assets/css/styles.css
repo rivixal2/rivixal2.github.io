@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: segoe-icons;
+    src: url(../fonts/segmdl2.ttf);
+}
+
+/*Scrollbar*/
+::-webkit-scrollbar {
+    transition: 0.2s;
+    background: #f3f3ffc9;
+    backdrop-filter: blur(5px);
+    margin-right: 5px;
+    width: 10px;
+    overflow-y: auto;
+    scrollbar-color: transparent;
+}
+
+::-webkit-scrollbar-button{
+    background-color: #d2d2d2;
+    border-radius: 15px;
+}
+
+::-webkit-scrollbar-button:hover { 
+    background-color: #0e67ff;
+}
+
+::-webkit-scrollbar-thumb {
+    border: 0.5px solid rgb(255, 255, 255) !important;
+    border-color: #0080ff;
+    border-radius: 15px;
+    background: #0080ff;  
+}
+
+::-webkit-scrollbar-thumb:hover {
+    border: 0.5px solid rgb(255, 255, 255) !important;
+    border-color: #006ad3;
+    border-radius: 15px;
+    background: #006ad3;
+    animation-duration: 0.5s;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: #006ad3;
+}
+
+html {
+    font-family: Segoe UI, 'segoe-icons', Arial, Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.icons-html {
+    font-family: 'segoe-icons';
+    vertical-align: -2px;
+    margin-right: 5px;
+}
+
+body {
+    background: linear-gradient(
+        to bottom,
+        rgba(39, 14, 78, 0.9), /* Темно-фиолетовый */
+        rgba(204, 83, 51, 0.7), /* Оранжевый */
+        rgba(75, 117, 190, 0.5) /* Голубой */
+      );
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(15px);
+    background-position: center top;
+    height: 100vh !important;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.center-block {
+    width: 800px !important;
+    height: 500px;
+    background-color: #fff;
+    border-radius: 15px;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.center-block button {
+    padding: 10px 15px;
+    float: right;
+    background-color: #0067bf;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    margin-top: 15px;
+    transition: .5s;
+    font-size: 20px;
+}
+
+.left {
+    align-items: center;
+    text-align: center;
+    width: 50% !important;
+    margin: auto;
+}
+
+.left img {
+    width: 60% !important;
+}
+
+.right {
+    width: 60% !important;
+    text-align: start;
+    margin: auto;
+}
+
+.title {
+    height: 50px;
+    font-size: 1.0em;
+    margin: auto;
+}
+
+.content {
+    width: 400px;
+    height: 350px;
+    overflow: auto;
+    padding: 5px;
+}
+
+footer {
+    width: 100%;
+    max-width: 900px;
+    font-family: 'segoe-icons';
+    font-size: 24px; /* Размер иконки */
+    display: flex;
+    align-items: flex-start; /* Выравнивание иконки по нижнему краю */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 70px;
+    flex-direction: row-reverse;
+}
+
+footer a {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #000000;
+    text-decoration: none; /* Убрать подчеркивание ссылки */
+}
+
+.main-layout ul {
+    list-style: none;
+    padding: 0;
+}
+
+.main-layout .ul .li {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.main-layout .ul .li.active {
+    background-color: #0067bf;
+    color: #fff;
+}

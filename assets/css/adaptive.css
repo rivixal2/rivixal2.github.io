@@ -1,0 +1,29 @@
+@media screen and (max-width: 867px) {
+    .center-block {
+        display: flex;
+        flex-direction: column;
+        width: 80% !important;
+        height: 85%;
+    }
+    .left {
+        align-items: center;
+        text-align: center;
+        width: 50% !important;
+        margin: auto;
+    }
+    .left img {
+        width: 100% !important;
+    }
+    .right {
+        width: 90% !important;
+        text-align: start;
+        margin: auto;
+    }
+    .content {
+        width: 100%;
+        height: 300px;
+    }
+    .right .title {
+        margin-bottom: 20px !important;
+    }
+}
