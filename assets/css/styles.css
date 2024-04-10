@@ -151,20 +151,20 @@ footer a {
     text-decoration: none; /* Убрать подчеркивание ссылки */
 }
 
-.main-layout ul {
-    list-style: none;
+.content ul {
     padding: 0;
 }
 
-.main-layout .ul .li {
+.content .ul .li {
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 10px;
     margin-bottom: 5px;
     cursor: pointer;
+    list-style: none;
 }
 
-.main-layout .ul .li.active {
+.content .ul .li.active {
     background-color: #0067bf;
     color: #fff;
 }
