@@ -58,18 +58,13 @@ html {
 }
 
 body {
-    background: linear-gradient(
-        to bottom,
-        rgba(39, 14, 78, 0.9), /* Темно-фиолетовый */
-        rgba(204, 83, 51, 0.7), /* Оранжевый */
-        rgba(75, 117, 190, 0.5) /* Голубой */
-      );
+    background-image: url(../image/wallpaper.png);
     background-repeat: no-repeat;
     background-size: cover;
     backdrop-filter: blur(15px);
     background-position: center top;
     height: 100vh !important;
-    overflow: hidden;
+    overflow: hidden !important;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -86,6 +81,7 @@ body {
     align-items: center;
     margin: 0;
     padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.212);
 }
 
 .center-block button {
@@ -99,6 +95,7 @@ body {
     margin-top: 15px;
     transition: .5s;
     font-size: 20px;
+    margin: 5px;
 }
 
 .left {
@@ -119,9 +116,12 @@ body {
 }
 
 .title {
-    height: 50px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    height: 35px;
     font-size: 1.0em;
-    margin: auto;
+    margin: 5px;
 }
 
 .content {
@@ -168,3 +168,25 @@ footer a {
     background-color: #0067bf;
     color: #fff;
 }
+
+.center-block .back {
+    display: flex;
+    align-items: flex-start;
+    height: 100%;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+@keyframes opcanimation {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .opacity-animation {
+    overflow: hidden !important;
+    animation: opcanimation .4s ease-in-out;
+  }
